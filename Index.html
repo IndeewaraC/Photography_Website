@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional photography services specializing in family, baby, and birthday photography">
+    <meta name="keywords" content="photography, family photos, baby photography, birthday photography, portraits">
+    <title>Dream Capture Photography | SK</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Calendly CSS -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER - Sticky Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+
+                <span><a href="index.html">Photography Studio</a></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a href="services.html">Services & Pricing</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HOME - Hero Section -->
+    <section id="home" class="hero page-section">
+        <div class="hero-content">
+            <h1>Capturing life’s fleeting moments and weaving dreams into reality</h1>
+            <p>Where art meets reality</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/indeewaragunathilaka/free-photography-consultation'});">Book Free Consultation</button>
+                <a href="portfolio.html" class="btn">View Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services -->
+    <section class="section">
+        <div class="container">
+            <h2>Featured Services</h2>
+            <div class="grid-3">
+                <div class="service-box">
+                    <div class="service-image" style="background-image: url('images/main/birthday.jpg');">
+                        <div class="image-overlay">
+                            <h4>Birthday Photography</h4>
+                        </div>
+                    </div>
+                    <h3>Birthday Photography</h3>
+                    <p>Capturing those special milestone moments with joy and creativity</p>
+                    <a href="services.html#birthday" class="btn">Learn More</a>
+                </div>
+                <div class="service-box">
+                    <div class="service-image" style="background-image: url('images/main/new born and baby.jpg');">
+                        <div class="image-overlay">
+                            <h4>Baby & Newborn</h4>
+                        </div>
+                    </div>
+                    <h3>Baby & Newborn</h3>
+                    <p>Precious first moments and milestones captured with care</p>
+                    <a href="services.html#newborn" class="btn">Learn More</a>
+                </div>
+                <div class="service-box">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');">
+                        <div class="image-overlay">
+                            <h4>Family Sessions</h4>
+                        </div>
+                    </div>
+                    <h3>Family Sessions</h3>
+                    <p>Beautiful family memories to treasure for generations</p>
+                    <a href="services.html#family" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="services.html" class="btn btn-primary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Carousel -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Clients Say</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial-item active">
+                    <p>"Amazing photography! She captured our family perfectly and made the whole experience enjoyable."</p>
+                    <div class="testimonial-author">- Sarah Johnson</div>
+                </div>
+                <div class="testimonial-item">
+                    <p>"The newborn session was incredible. So patient and professional with our little one."</p>
+                    <div class="testimonial-author">- Mike & Lisa Chen</div>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Our birthday photos turned out beyond our expectations. Highly recommend!"</p>
+                    <div class="testimonial-author">- Jennifer Martinez</div>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Work Preview -->
+    <section class="section latest-work">
+        <div class="container">
+            <h2>Latest Work</h2>
+            <div class="grid-4">
+                <div class="work-item" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80');">
+                    <div class="work-overlay">
+                        <h4>Summer Family Session</h4>
+                        <a href="portfolio.html" class="work-link">View Gallery →</a>
+                    </div>
+                </div>
+                <div class="work-item" style="background-image: url('https://images.unsplash.com/photo-1566004100631-35d015d6a491?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80');">
+                    <div class="work-overlay">
+                        <h4>Newborn Portrait</h4>
+                        <a href="portfolio.html" class="work-link">View Gallery →</a>
+                    </div>
+                </div>
+                <div class="work-item" style="background-image: url('https://images.unsplash.com/photo-1540479859555-17af45c78602?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80');">
+                    <div class="work-overlay">
+                        <h4>Birthday Celebration</h4>
+                        <a href="portfolio.html" class="work-link">View Gallery →</a>
+                    </div>
+                </div>
+                <div class="work-item" style="background-image: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80');">
+                    <div class="work-overlay">
+                        <h4>Maternity Session</h4>
+                        <a href="portfolio.html" class="work-link">View Gallery →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="portfolio.html" class="btn btn-primary">View Full Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="section about-preview">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Photographer Portrait">
+                </div>
+                <div class="about-text">
+                    <h2>Hi, I'm Sarah!</h2>
+                    <p>With over 8 years of experience in photography, I specialize in capturing the authentic moments that make your family unique. My approach is relaxed, fun, and focused on creating a comfortable environment where genuine emotions shine through.</p>
+                    <p>I believe every family has a story worth telling, and I'm here to help you preserve those precious memories in beautiful, timeless photographs.</p>
+                    <div class="about-cta">
+                        <a href="about.html" class="btn btn-outline">Learn More About Me</a>
+                        <button class="btn btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/indeewaragunathilaka/free-photography-consultation'});">Book Free Consultation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact CTA -->
+    <section class="section cta-section">
+        <div class="container text-center">
+            <h2>Ready to Capture Your Memories?</h2>
+            <p>Let's discuss your photography needs and create something beautiful together</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary btn-large" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/indeewaragunathilaka/free-photography-consultation'});">Book Free Consultation</button>
+                <a href="contact.html" class="btn btn-outline btn-large">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/icons/logo.svg" alt="Photography Studio">
+                        <span>Photography Studio</span>
+                    </div>
+                    <p>Capturing life's precious moments with artistry and care.</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+                        <a href="#"><img src="assets/icons/pinterest.svg" alt="Pinterest"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#family">Family Photography</a></li>
+                        <li><a href="services.html#newborn">Newborn Sessions</a></li>
+                        <li><a href="services.html#birthday">Birthday Photography</a></li>
+                        <li><a href="services.html#baby-shower">Baby Showers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: hello@photographystudio.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Serving Greater Metro Area</p>
+                    <div class="footer-cta">
+                        <button class="btn btn-outline" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/indeewaragunathilaka/free-photography-consultation'});">Book Free Consultation</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2024 Photography Studio. All rights reserved.</p>
+                </div>
+            
+            </div>
+        </div>
+    </footer>
+
+    <!-- Calendly JavaScript -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/testimonial-carousel.js"></script>
+
+
+</body>
+</html>

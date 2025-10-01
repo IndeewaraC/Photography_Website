@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View our portfolio of family, baby, newborn, and birthday photography sessions. Professional photography examples and client galleries.">
+    <meta name="keywords" content="photography portfolio, family photos, baby photography, newborn photos, birthday photography, photo gallery">
+    <title>Portfolio - Photography Studio</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Calendly CSS -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER - Sticky Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="assets/icons/logo.svg" alt="Photography Studio" class="logo-img">
+                <span><a href="index.html">Photography Studio</a></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item active"><a href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a href="services.html">Services & Pricing</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Image Section -->
+    <section class="portfolio-hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-image-content">
+            <h1>My Portfolio</h1>
+            <p>Cherished moments and beautiful memories</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filters -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="family">Family Sessions</button>
+                <button class="filter-btn" data-filter="newborn">Baby & Newborn</button>
+                <button class="filter-btn" data-filter="birthday">Birthday Photography</button>
+                <button class="filter-btn" data-filter="baby-shower">Baby Showers</button>
+                <button class="filter-btn" data-filter="maternity">Maternity</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Portfolio items will be loaded here -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section text-center">
+                <p class="portfolio-note">Showing recent work from 2024. More galleries available upon request.</p>
+                <button class="btn btn-outline" onclick="loadMorePortfolio()">View More Sessions</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Business Reviews Section -->
+    <section class="section reviews-section">
+        <div class="container">
+            <h2>What Clients Say About Their Experience</h2>
+            <p class="reviews-subtitle">Read our reviews on Google Business</p>
+            
+            <div class="testimonials-grid" id="reviewsGrid">
+                <!-- Reviews will be loaded here -->
+            </div>
+            
+            <!-- Google Business CTA -->
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="https://www.google.com/search?q=your+business+name" target="_blank" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;">
+                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                    </svg>
+                    Leave a Google Review
+                </a>
+                <p style="margin-top: 15px; color: #666; font-size: 0.9rem;">Your feedback helps us improve and helps others find quality photography services</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio CTA -->
+    <section class="portfolio-cta-section">
+        <div class="container text-center">
+            <h2>Ready to Create Your Own Beautiful Gallery?</h2>
+            <p>Let's capture your family's unique story and create memories that will last a lifetime</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary btn-large" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/indeewaragunathilaka/free-photography-consultation'});">Book Free Consultation</button>
+                <a href="services.html" class="btn btn-outline btn-large">View Packages & Pricing</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/icons/logo.svg" alt="Photography Studio">
+                        <span>Photography Studio</span>
+                    </div>
+                    <p>Capturing life's precious moments with artistry and care.</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+                        <a href="#"><img src="assets/icons/pinterest.svg" alt="Pinterest"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#family">Family Photography</a></li>
+                        <li><a href="services.html#newborn">Newborn Sessions</a></li>
+                        <li><a href="services.html#birthday">Birthday Photography</a></li>
+                        <li><a href="services.html#baby-shower">Baby Showers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: hello@photographystudio.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Serving Greater Metro Area</p>
+                    <div class="footer-cta">
+                        <button class="btn btn-outline" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/indeewaragunathilaka/free-photography-consultation'});">Book Free Consultation</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2024 Photography Studio. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Calendly JavaScript -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+
+    <style>
+        :root {
+            --primary-color: #667eea;
+            --accent-color: #f39c12;
+            --light-bg: #f8f9fa;
+        }
+
+        /* Hero Image Styles */
+        .portfolio-hero-image {
+            position: relative;
+            height: 60vh;
+            min-height: 400px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 70px;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        
+        .hero-image-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        
+        .hero-image-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero-image-content p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .portfolio-section {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .portfolio-filters {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            background: transparent;
+            border: 2px solid #ddd;
+            color: #666;
+            padding: 12px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+        
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .portfolio-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .portfolio-item.hidden {
+            display: none;
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+        
+        .portfolio-image {
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.7) 70%);
+            color: white;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+        
+        .portfolio-overlay h4 {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+            color: white;
+        }
+        
+        .portfolio-overlay p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .portfolio-details {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .session-type,
+        .session-date {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .view-gallery-btn {
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            align-self: flex-start;
+        }
+        
+        .view-gallery-btn:hover {
+            background: #e67e22;
+            transform: translateY(-2px);
+        }
+        
+        .load-more-section {
+            margin-top: 40px;
+        }
+        
+        .portfolio-note {
+            color: #666;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+        
+        .reviews-section {
+            background: var(--light-bg);
+            padding: 80px 0;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .reviews-subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .testimonial-content p {
+            color: #333;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .author-info strong {
+            display: block;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        .author-info span {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .testimonial-rating {
+            font-size: 1.2rem;
+        }
+        
+        .portfolio-cta-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+        }
+        
+        .portfolio-cta-section h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .portfolio-cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #e67e22;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+        
+        .btn-large {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .portfolio-hero-image {
+                height: 40vh;
+                min-height: 300px;
+            }
+            
+            .hero-image-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-image-content p {
+                font-size: 1.2rem;
+            }
+            
+            .portfolio-filters {
+                gap: 10px;
+                justify-content: flex-start;
+                overflow-x: auto;
+                padding-bottom: 10px;
+            }
+            
+            .filter-btn {
+                white-space: nowrap;
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+            
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .portfolio-image {
+                height: 250px;
+            }
+            
+            .portfolio-overlay {
+                opacity: 1;
+                background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.8) 50%);
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-large {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+
+    <script>
+        // Portfolio Data
+        const portfolioData = {
+            items: [
+                {
+                    id: 'morrison-family',
+                    name: 'The Morrison Family',
+                    description: 'Spring Family Session',
+                    category: 'family',
+                    date: '2024-03',
+                    image: 'https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+                    galleryId: 'morrison-family'
+                },
+                {
+                    id: 'parker-family',
+                    name: 'The Parker Family',
+                    description: 'Winter Family Portraits',
+                    category: 'family',
+                    date: '2024-02',
+                    image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+                    galleryId: 'parker-family'
+                },
+                {
+                    id: 'baby-olivia',
+                    name: 'Baby Olivia',
+                    description: 'Newborn Session at 8 days',
+                    category: 'newborn',
+                    date: '2024-03',
+                    image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+                    galleryId: 'baby-olivia'
+                },
+                {
+                    id: 'sofia-birthday',
+                    name: "Sofia's 3rd Birthday",
+                    description: 'Princess Theme Celebration',
+                    category: 'birthday',
+                    date: '2024-03',
+                    image: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+                    galleryId: 'sofia-birthday'
+                },
+                {
+                    id: 'ashley-shower',
+                    name: "Ashley's Baby Shower",
+                    description: 'Boho Chic Theme',
+                    category: 'baby-shower',
+                    date: '2024-03',
+                    image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+                    galleryId: 'ashley-shower'
+                },
+                {
+                    id: 'rachel-maternity',
+                    name: "Rachel's Maternity",
+                    description: 'Golden Hour Session',
+                    category: 'maternity',
+                    date: '2024-03',
+                    image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+                    galleryId: 'rachel-maternity'
+                }
+            ]
+        };
+
+        // Static reviews (would typically come from Google Business API)
+        const reviewsData = [
+            {
+                name: 'The Morrison Family',
+                type: 'Family Session Client',
+                text: 'Sarah captured our family perfectly! The photos are absolutely beautiful and we\'ll treasure them forever. She made everyone feel comfortable and the whole experience was so enjoyable.',
+                rating: 5
+            },
+            {
+                name: 'Baby Olivia\'s Parents',
+                type: 'Newborn Session Client',
+                text: 'Working with Sarah for our newborn session was amazing. She was so patient and gentle with our little one. The photos exceeded all our expectations - they\'re absolutely perfect!',
+                rating: 5
+            },
+            {
+                name: 'Sofia\'s Family',
+                type: 'Birthday Session Client',
+                text: 'Our daughter\'s birthday photos are incredible! Sarah captured all the joy and excitement of the day. We can\'t wait to book our next session with her.',
+                rating: 5
+            }
+        ];
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            loadPortfolioItems();
+            loadReviews();
+            setupFilters();
+        });
+
+        // Portfolio Functions
+        function loadPortfolioItems() {
+            const grid = document.getElementById('portfolioGrid');
+            grid.innerHTML = '';
+            
+            portfolioData.items.forEach(item => {
+                const categoryMap = {
+                    'family': 'Family Session',
+                    'newborn': 'Newborn Session',
+                    'birthday': 'Birthday Session',
+                    'baby-shower': 'Baby Shower',
+                    'maternity': 'Maternity Session'
+                };
+
+                const dateObj = new Date(item.date + '-01');
+                const formattedDate = dateObj.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+
+                const portfolioHTML = `
+                    <div class="portfolio-item" data-category="${item.category}" data-date="${item.date}">
+                        <div class="portfolio-image" style="background-image: url('${item.image}');">
+                            <div class="portfolio-overlay">
+                                <h4>${item.name}</h4>
+                                <p>${item.description}</p>
+                                <div class="portfolio-details">
+                                    <span class="session-type">${categoryMap[item.category]}</span>
+                                    <span class="session-date">${formattedDate}</span>
+                                </div>
+                                <button class="view-gallery-btn" onclick="openGallery('${item.galleryId}')">View Gallery</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                grid.innerHTML += portfolioHTML;
+            });
+        }
+
+        function setupFilters() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    portfolioItems.forEach(item => {
+                        const category = item.getAttribute('data-category');
+                        
+                        if (filter === 'all' || category === filter) {
+                            item.classList.remove('hidden');
+                        } else {
+                            item.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+        }
+
+        function openGallery(galleryId) {
+            alert('Gallery viewer would open here showing the full session for: ' + galleryId);
+        }
+
+        function loadMorePortfolio() {
+            alert('This would load more portfolio sessions from previous years.');
+        }
+
+        // Reviews Functions
+        function loadReviews() {
+            const grid = document.getElementById('reviewsGrid');
+            grid.innerHTML = '';
+            
+            reviewsData.forEach(review => {
+                const stars = '⭐'.repeat(review.rating);
+                const reviewHTML = `
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"${review.text}"</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <strong>${review.name}</strong>
+                                    <span>${review.type}</span>
+                                </div>
+                                <div class="testimonial-rating">${stars}</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                grid.innerHTML += reviewHTML;
+            });
+        }
+    </script>
+</body>
+</html>

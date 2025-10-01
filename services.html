@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photography services and pricing for family, baby, newborn, and birthday photography sessions. Professional packages starting at $299.">
+    <meta name="keywords" content="photography pricing, family photography cost, newborn photography packages, birthday photography sessions">
+    <title>Services & Pricing - Photography Studio</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Calendly CSS -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER - Sticky Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="assets/icons/logo.svg" alt="Photography Studio" class="logo-img">
+                <span><a href="index.html">Photography Studio</a></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item active"><a href="services.html">Services & Pricing</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Image Section -->
+    <section class="services-hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-image-content">
+            <h1>Services & Pricing</h1>
+            <p>Professional photography packages for every milestone</p>
+        </div>
+    </section>
+
+    <!-- Main Packages -->
+    <section class="section packages-section">
+        <div class="container">
+            <h2>Photography Packages</h2>
+            <p class="section-subtitle">Choose the perfect package for your needs. All packages include professional editing, online gallery, and print release.</p>
+            
+            <div class="pricing-packages">
+                <!-- Birthday Package -->
+                <div class="package" id="birthday">
+                    <div class="package-header">
+                        <div class="package-icon">🎂</div>
+                        <h3>Birthday Photography</h3>
+                        <div class="price">Starting at <span class="price-amount">$299</span></div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-description">
+                            <p>Celebrate those special milestone moments with joy and creativity. Perfect for first birthdays, milestone birthdays, or any celebration.</p>
+                        </div>
+                        <ul class="package-includes">
+                            <li>✓ 1 hour photo session</li>
+                            <li>✓ 30+ edited high-resolution photos</li>
+                            <li>✓ Online gallery for sharing</li>
+                            <li>✓ Print release included</li>
+                            <li>✓ Props and decorations available</li>
+                            <li>✓ Cake smash option available</li>
+                        </ul>
+                        <div class="package-details">
+                            <h4>Perfect For:</h4>
+                            <p>First birthdays, milestone birthdays (5th, 10th, etc.), themed parties, cake smash sessions</p>
+                        </div>
+                        <button class="btn btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/indeewaragunathilaka/free-photography-consultation'});">Book Birthday Session</button>
+                    </div>
+                </div>
+
+                <!-- Newborn Package -->
+                <div class="package featured" id="newborn">
+                    <div class="package-badge">Most Popular</div>
+                    <div class="package-header">
+                        <div class="package-icon">👶</div>
+                        <h3>Baby & Newborn</h3>
+                        <div class="price">Starting at <span class="price-amount">$399</span></div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-description">
+                            <p>Precious first moments and milestones captured with care. Specialized newborn photography with safety-first approach.</p>
+                        </div>
+                        <ul class="package-includes">
+                            <li>✓ 2-3 hour photo session</li>
+                            <li>✓ 50+ edited high-resolution photos</li>
+                            <li>✓ Online gallery for sharing</li>
+                            <li>✓ Print release included</li>
+                            <li>✓ Props and wraps included</li>
+                            <li>✓ Family shots included</li>
+                            <li>✓ Studio or in-home options</li>
+                        </ul>
+                        <div class="package-details">
+                            <h4>Perfect For:</h4>
+                            <p>Newborns (5-14 days old), 3-month sessions, 6-month sitters, 1-year milestones</p>
+                        </div>
+                        <button class="btn btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/indeewaragunathilaka/free-photography-consultation'});">Book Newborn Session</button>
+                    </div>
+                </div>
+
+                <!-- Family Package -->
+                <div class="package" id="family">
+                    <div class="package-header">
+                        <div class="package-icon">👨‍👩‍👧‍👦</div>
+                        <h3>Family Sessions</h3>
+                        <div class="price">Starting at <span class="price-amount">$349</span></div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-description">
+                            <p>Beautiful family memories to treasure for generations. Relaxed sessions that capture your family's unique personality.</p>
+                        </div>
+                        <ul class="package-includes">
+                            <li>✓ 90 minute photo session</li>
+                            <li>✓ 40+ edited high-resolution photos</li>
+                            <li>✓ Online gallery for sharing</li>
+                            <li>✓ Print release included</li>
+                            <li>✓ Location of your choice</li>
+                            <li>✓ Multiple outfit changes</li>
+                        </ul>
+                        <div class="package-details">
+                            <h4>Perfect For:</h4>
+                            <p>Annual family photos, holiday cards, extended family gatherings, lifestyle sessions</p>
+                        </div>
+                        <button class="btn btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/indeewaragunathilaka/free-photography-consultation'});">Book Family Session</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="section additional-services">
+        <div class="container">
+            <h2>Additional Services</h2>
+            <div class="services-grid">
+                <div class="service-card" id="baby-shower">
+                    <div class="service-icon">🍼</div>
+                    <h3>Baby Showers</h3>
+                    <div class="service-price">Starting at $275</div>
+                    <p>Capture the joy and excitement of your baby shower celebration with beautiful event photography.</p>
+                    <ul class="service-features">
+                        <li>• 2 hour coverage</li>
+                        <li>• 25+ edited photos</li>
+                        <li>• Key moments and details</li>
+                        <li>• Group and candid shots</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/indeewaragunathilaka/free-photography-consultation'});">Book Baby Shower</button>
+                </div>
+
+                <div class="service-card" id="maternity">
+                    <div class="service-icon">🤰</div>
+                    <h3>Maternity Sessions</h3>
+                    <div class="service-price">Starting at $325</div>
+                    <p>Beautiful maternity photography celebrating this special time in your life with elegant portraits.</p>
+                    <ul class="service-features">
+                        <li>• 1 hour session</li>
+                        <li>• 35+ edited photos</li>
+                        <li>• Maternity gowns available</li>
+                        <li>• Partner/family included</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/indeewaragunathilaka/free-photography-consultation'});">Book Maternity Session</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Mini Sessions</h3>
+                    <div class="service-price">Starting at $199</div>
+                    <p>Quick 30-minute sessions perfect for holiday cards, announcements, or updating family photos.</p>
+                    <ul class="service-features">
+                        <li>• 30 minute session</li>
+                        <li>• 15+ edited photos</li>
+                        <li>• Perfect for updates</li>
+                        <li>• Limited availability</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/indeewaragunathilaka/free-photography-consultation'});">Book Mini Session</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎥</div>
+                    <h3>Session Add-Ons</h3>
+                    <div class="service-price">Various Pricing</div>
+                    <p>Enhance your session with additional services like rush delivery, extra editing, or additional locations.</p>
+                    <ul class="service-features">
+                        <li>• Rush delivery (48hrs) - $75</li>
+                        <li>• Extra location - $50</li>
+                        <li>• Extended session time - $100/hr</li>
+                        <li>• Professional prints available</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/indeewaragunathilaka/free-photography-consultation'});">Discuss Add-Ons</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section class="section process-section">
+        <div class="container">
+            <h2>How It Works</h2>
+            <p class="section-subtitle">From booking to receiving your beautiful photos, here's what to expect</p>
+            
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Book Your Session</h3>
+                        <p>Schedule a free consultation or book directly. We'll discuss your vision, location preferences, and any special requests.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Prepare for Your Session</h3>
+                        <p>Receive a detailed preparation guide including outfit suggestions, timing tips, and what to bring.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Enjoy Your Photo Session</h3>
+                        <p>Relax and have fun! Sessions are designed to be comfortable and enjoyable for everyone involved.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Receive Your Photos</h3>
+                        <p>Get a sneak peek within 48 hours, then your complete gallery within 2-3 weeks via private online gallery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Notes -->
+    <section class="section pricing-info">
+        <div class="container">
+            <div class="pricing-cards">
+                <div class="info-card">
+                    <h3>What's Included</h3>
+                    <ul>
+                        <li>✓ Professional photography session</li>
+                        <li>✓ Professional editing and retouching</li>
+                        <li>✓ High-resolution digital images</li>
+                        <li>✓ Private online gallery</li>
+                        <li>✓ Print release for personal use</li>
+                        <li>✓ Mobile-friendly gallery for easy sharing</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>Payment Options</h3>
+                    <ul>
+                        <li>• 50% deposit to secure your date</li>
+                        <li>• Remaining balance due at session</li>
+                        <li>• Payment plans available for larger packages</li>
+                        <li>• Accepts cash, check, and all major credit cards</li>
+                        <li>• Venmo and PayPal accepted</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>Session Guarantee</h3>
+                    <ul>
+                        <li>• 100% satisfaction guarantee</li>
+                        <li>• Weather-related rescheduling at no charge</li>
+                        <li>• Professional backup equipment always on hand</li>
+                        <li>• Clear communication throughout process</li>
+                        <li>• Support with outfit and location planning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container text-center">
+            <h2>Ready to Book Your Session?</h2>
+            <p>Let's create beautiful memories together that you'll treasure for a lifetime</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary btn-large" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/indeewaragunathilaka/free-photography-consultation'});">Book Free Consultation</button>
+                <a href="contact.html" class="btn btn-outline btn-large">Ask a Question</a>
+            </div>
+            <p class="cta-note">Not sure which package is right for you? Book a free 30-minute consultation to discuss your needs!</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/icons/logo.svg" alt="Photography Studio">
+                        <span>Photography Studio</span>
+                    </div>
+                    <p>Capturing life's precious moments with artistry and care.</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+                        <a href="#"><img src="assets/icons/pinterest.svg" alt="Pinterest"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#family">Family Photography</a></li>
+                        <li><a href="services.html#newborn">Newborn Sessions</a></li>
+                        <li><a href="services.html#birthday">Birthday Photography</a></li>
+                        <li><a href="services.html#baby-shower">Baby Showers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: hello@photographystudio.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Serving Greater Metro Area</p>
+                    <div class="footer-cta">
+                        <button class="btn btn-outline" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/indeewaragunathilaka/free-photography-consultation'});">Book Free Consultation</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2024 Photography Studio. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Calendly JavaScript -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+
+    <!-- Services Page Styles -->
+    <style>
+        /* Hero Image Styles */
+        .services-hero-image {
+            position: relative;
+            height: 60vh;
+            min-height: 400px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-image: url('assets/images/services-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 70px;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        
+        .hero-image-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        
+        .hero-image-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero-image-content p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .packages-section {
+            background: white;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 50px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .pricing-packages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .package {
+            background: white;
+            border: 2px solid #f0f0f0;
+            border-radius: 20px;
+            padding: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .package:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-color: var(--accent-color);
+        }
+        
+        .package.featured {
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 30px rgba(247, 156, 54, 0.2);
+        }
+        
+        .package-badge {
+            position: absolute;
+            top: 20px;
+            right: -35px;
+            background: var(--accent-color);
+            color: white;
+            padding: 8px 40px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            transform: rotate(45deg);
+            z-index: 10;
+        }
+        
+        .package-header {
+            background: var(--light-bg);
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .package-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .package-header h3 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .price {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        
+        .price-amount {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            display: block;
+        }
+        
+        .package-content {
+            padding: 30px;
+        }
+        
+        .package-description {
+            margin-bottom: 25px;
+        }
+        
+        .package-description p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .package-includes {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 25px;
+        }
+        
+        .package-includes li {
+            padding: 8px 0;
+            color: #333;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .package-includes li:last-child {
+            border-bottom: none;
+        }
+        
+        .package-details {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: var(--light-bg);
+            border-radius: 10px;
+        }
+        
+        .package-details h4 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .package-details p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+        
+        .additional-services {
+            background: var(--light-bg);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .service-price {
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .service-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        
+        .service-features li {
+            color: #666;
+            padding: 5px 0;
+            font-size: 0.95rem;
+        }
+        
+        .process-section {
+            background: white;
+        }
+        
+        .process-timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--accent-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+        
+        .step-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .step-content p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .pricing-info {
+            background: var(--light-bg);
+        }
+        
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .info-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .info-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .info-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .info-card li {
+            padding: 8px 0;
+            color: #666;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .info-card li:last-child {
+            border-bottom: none;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .btn-large {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+        }
+        
+        .cta-note {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin: 0;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .active {
+            color: var(--accent-color) !important;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .services-hero-image {
+                height: 40vh;
+                min-height: 300px;
+            }
+            
+            .hero-image-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-image-content p {
+                font-size: 1.2rem;
+            }
+            
+            .pricing-packages {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .package-header {
+                padding: 30px 20px;
+            }
+            
+            .package-content {
+                padding: 20px;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .process-timeline {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-large {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</body>
+</html>

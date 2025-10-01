@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact and book photography sessions for family, baby, newborn, and birthday photography. Free consultations available.">
+    <meta name="keywords" content="book photography session, contact photographer, photography consultation, family photography booking">
+    <title>Contact & Book - Photography Studio</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additionalStyleforContact.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Calendly CSS -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        .contact-hero-image {
+            position: relative;
+            height: 60vh;
+            min-height: 400px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-image: url('assets/images/contact-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 70px;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        
+        .hero-image-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        
+        .hero-image-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero-image-content p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .contact-hero-image {
+                height: 40vh;
+                min-height: 300px;
+            }
+            
+            .hero-image-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-image-content p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER - Sticky Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="assets/icons/logo.svg" alt="Photography Studio" class="logo-img">
+                <span><a href="index.html">Photography Studio</a></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a href="services.html">Services & Pricing</a></li>
+                <li class="nav-item active"><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Image Section -->
+    <section class="contact-hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-image-content">
+            <h1>Get In Touch</h1>
+            <p>Let's discuss your photography needs</p>
+        </div>
+    </section>
+
+    <!-- Main Contact Content -->
+    <section class="section contact-main">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send a Message</h2>
+                    <p>Fill out the form below and I'll get back to you within 4 hours (usually much sooner!)</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="session-type">Session Type</label>
+                                <select id="session-type" name="session-type">
+                                    <option value="">Select a session type</option>
+                                    <option value="consultation">Free Consultation</option>
+                                    <option value="birthday">Birthday Photography</option>
+                                    <option value="newborn">Baby/Newborn</option>
+                                    <option value="family">Family Session</option>
+                                    <option value="baby-shower">Baby Shower</option>
+                                    <option value="maternity">Maternity</option>
+                                    <option value="mini">Mini Session</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferred-date">Preferred Date/Timeframe</label>
+                            <input type="text" id="preferred-date" name="preferred-date" placeholder="e.g., Next 2 weeks, Weekend of March 15th, etc.">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="location">Preferred Location</label>
+                            <select id="location" name="location">
+                                <option value="">Select location preference</option>
+                                <option value="studio">Studio Session</option>
+                                <option value="outdoor">Outdoor Location</option>
+                                <option value="home">In-Home Session</option>
+                                <option value="venue">Event Venue</option>
+                                <option value="discuss">Let's Discuss</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Tell Me About Your Session *</label>
+                            <textarea id="message" name="message" rows="5" required 
+                                      placeholder="Tell me about your family, what you're hoping to capture, any special requests, or questions you have..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                I'd like to receive photography tips and updates (optional)
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                        <p class="form-note">You'll hear back from me within 4 hours, usually much sooner!</p>
+                    </form>
+                </div>
+
+                <!-- Calendar Booking Section -->
+                <div class="calendar-booking-container">
+                    <h2>Book Your Session</h2>
+                    <p>Ready to book? Choose a time that works for you!</p>
+                    
+                    <!-- Quick Book Buttons -->
+                    <div class="quick-book-section">
+                        <h3>Popular Sessions</h3>
+                        <div class="quick-book-buttons">
+                            <button class="quick-book-btn" 
+                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/photography-consultation'});">
+                                <span class="btn-icon">☕</span>
+                                <span class="btn-text">
+                                    <strong>Free Consultation</strong>
+                                    <small>30 min chat about your needs</small>
+                                </span>
+                            </button>
+                            
+                            <button class="quick-book-btn" 
+                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/family-session'});">
+                                <span class="btn-icon">👨‍👩‍👧‍👦</span>
+                                <span class="btn-text">
+                                    <strong>Family Session</strong>
+                                    <small>90 min session, 40+ photos</small>
+                                </span>
+                            </button>
+                            
+                            <button class="quick-book-btn" 
+                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/newborn-session'});">
+                                <span class="btn-icon">👶</span>
+                                <span class="btn-text">
+                                    <strong>Newborn Session</strong>
+                                    <small>2-3 hr session, 50+ photos</small>
+                                </span>
+                            </button>
+                            
+                            <button class="quick-book-btn" 
+                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/birthday-session'});">
+                                <span class="btn-icon">🎂</span>
+                                <span class="btn-text">
+                                    <strong>Birthday Session</strong>
+                                    <small>1 hr session, 30+ photos</small>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- OR Divider -->
+                    <div class="divider">
+                        <span>OR</span>
+                    </div>
+                    
+                    <!-- Embedded Calendar -->
+                    <div class="calendar-embed">
+                        <h3>View All Available Times</h3>
+                        <div class="calendly-inline-widget" 
+                             data-url="https://calendly.com/your-username/photography-session" 
+                             style="min-width:320px;height:700px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="section contact-info">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>hello@photographystudio.com</p>
+                    <small>Response within 4 hours</small>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">📞</div>
+                    <h3>Phone</h3>
+                    <p>(555) 123-4567</p>
+                    <small>Call or text anytime</small>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">📍</div>
+                    <h3>Service Area</h3>
+                    <p>Greater Metro Area</p>
+                    <small>30-mile radius from studio</small>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">🏢</div>
+                    <h3>Studio</h3>
+                    <p>By appointment only</p>
+                    <small>Address provided after booking</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Session Information -->
+    <section class="section session-info">
+        <div class="container">
+            <h2>Session Information</h2>
+            <p class="section-subtitle">Everything you need to know about booking and what to expect</p>
+            
+            <div class="session-grid">
+                <div class="session-card">
+                    <h3>🎂 Birthday Sessions</h3>
+                    <div class="session-details">
+                        <div class="detail">
+                            <strong>Duration:</strong> 1 hour
+                        </div>
+                        <div class="detail">
+                            <strong>Starting at:</strong> $299
+                        </div>
+                        <div class="detail">
+                            <strong>Includes:</strong> 30+ edited photos
+                        </div>
+                        <div class="detail">
+                            <strong>Best for:</strong> 1st birthdays, milestone celebrations
+                        </div>
+                    </div>
+                    <button class="btn btn-outline" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/birthday-session'});">Book Birthday Session</button>
+                </div>
+                
+                <div class="session-card featured">
+                    <div class="session-badge">Most Popular</div>
+                    <h3>👶 Newborn Sessions</h3>
+                    <div class="session-details">
+                        <div class="detail">
+                            <strong>Duration:</strong> 2-3 hours
+                        </div>
+                        <div class="detail">
+                            <strong>Starting at:</strong> $399
+                        </div>
+                        <div class="detail">
+                            <strong>Includes:</strong> 50+ edited photos
+                        </div>
+                        <div class="detail">
+                            <strong>Best for:</strong> 5-14 days old
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/newborn-session'});">Book Newborn Session</button>
+                </div>
+                
+                <div class="session-card">
+                    <h3>👨‍👩‍👧‍👦 Family Sessions</h3>
+                    <div class="session-details">
+                        <div class="detail">
+                            <strong>Duration:</strong> 1.5 hours
+                        </div>
+                        <div class="detail">
+                            <strong>Starting at:</strong> $349
+                        </div>
+                        <div class="detail">
+                            <strong>Includes:</strong> 40+ edited photos
+                        </div>
+                        <div class="detail">
+                            <strong>Best for:</strong> Annual family photos
+                        </div>
+                    </div>
+                    <button class="btn btn-outline" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/family-session'});">Book Family Session</button>
+                </div>
+                
+                <div class="session-card">
+                    <h3>💬 Free Consultation</h3>
+                    <div class="session-details">
+                        <div class="detail">
+                            <strong>Duration:</strong> 30 minutes
+                        </div>
+                        <div class="detail">
+                            <strong>Cost:</strong> Complimentary
+                        </div>
+                        <div class="detail">
+                            <strong>Format:</strong> Phone or video call
+                        </div>
+                        <div class="detail">
+                            <strong>Perfect for:</strong> Planning your session
+                        </div>
+                    </div>
+                    <button class="btn btn-outline" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/photography-consultation'});">Book Consultation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media & Follow -->
+    <section class="section social-section">
+        <div class="container">
+            <h2>Follow My Work</h2>
+            <p class="section-subtitle">See behind-the-scenes content and recent session highlights</p>
+            
+            <div class="social-links">
+                <a href="#" class="social-card">
+                    <div class="social-icon">
+                        <img src="assets/icons/instagram.svg" alt="Instagram">
+                    </div>
+                    <div class="social-content">
+                        <h3>Instagram</h3>
+                        <p>Daily stories and recent work</p>
+                        <span class="follow-count">2.5k followers</span>
+                    </div>
+                </a>
+                
+                <a href="#" class="social-card">
+                    <div class="social-icon">
+                        <img src="assets/icons/facebook.svg" alt="Facebook">
+                    </div>
+                    <div class="social-content">
+                        <h3>Facebook</h3>
+                        <p>Client features and tips</p>
+                        <span class="follow-count">1.8k likes</span>
+                    </div>
+                </a>
+                
+                <a href="#" class="social-card">
+                    <div class="social-icon">
+                        <img src="assets/icons/pinterest.svg" alt="Pinterest">
+                    </div>
+                    <div class="social-content">
+                        <h3>Pinterest</h3>
+                        <p>Session inspiration</p>
+                        <span class="follow-count">5.2k followers</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section final-cta">
+        <div class="container text-center">
+            <h2>Ready to Get Started?</h2>
+            <p>I can't wait to meet your family and capture your beautiful moments</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary btn-large" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/photography-consultation'});">Book Free Consultation</button>
+                <a href="mailto:hello@photographystudio.com" class="btn btn-outline btn-large">Send Email</a>
+            </div>
+            <p class="cta-promise">I promise to respond within 4 hours and make the whole process easy and enjoyable!</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/icons/logo.svg" alt="Photography Studio">
+                        <span>Photography Studio</span>
+                    </div>
+                    <p>Capturing life's precious moments with artistry and care.</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+                        <a href="#"><img src="assets/icons/pinterest.svg" alt="Pinterest"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#family">Family Photography</a></li>
+                        <li><a href="services.html#newborn">Newborn Sessions</a></li>
+                        <li><a href="services.html#birthday">Birthday Photography</a></li>
+                        <li><a href="services.html#baby-shower">Baby Showers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: hello@photographystudio.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Serving Greater Metro Area</p>
+                    <div class="footer-cta">
+                        <button class="btn btn-outline" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/photography-consultation'});">Book Free Consultation</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2024 Photography Studio. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Calendly JavaScript -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script>
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const formObject = {};
+            formData.forEach((value, key) => {
+                formObject[key] = value;
+            });
+            
+            // Show success message
+            showSuccessMessage();
+            
+            // Reset form
+            this.reset();
+            
+            // Track form submission
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'form_submit', {
+                    'event_category': 'contact',
+                    'event_label': formObject['session-type'] || 'general_inquiry'
+                });
+            }
+        });
+        
+        function showSuccessMessage() {
+            const successMessage = document.createElement('div');
+            successMessage.className = 'success-overlay';
+            successMessage.innerHTML = `
+                <div class="success-content">
+                    <div class="success-icon">✅</div>
+                    <h3>Message Sent!</h3>
+                    <p>Thank you for reaching out! I'll get back to you within 4 hours (usually much sooner).</p>
+                    <p>In the meantime, feel free to check out my <a href="portfolio.html">recent work</a> or <a href="blog.html">photography tips</a>.</p>
+                    <button class="btn btn-primary" onclick="closeSuccessMessage()">Close</button>
+                </div>
+            `;
+            
+            successMessage.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 10000;
+                animation: fadeIn 0.3s ease;
+            `;
+            
+            document.body.appendChild(successMessage);
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeSuccessMessage() {
+            const overlay = document.querySelector('.success-overlay');
+            if (overlay) {
+                overlay.style.animation = 'fadeOut 0.3s ease';
+                setTimeout(() => {
+                    overlay.remove();
+                    document.body.style.overflow = '';
+                }, 300);
+            }
+        }
+        
+        // Smooth scroll to form
+        document.addEventListener('DOMContentLoaded', function() {
+            const hash = window.location.hash;
+            if (hash === '#contactForm') {
+                document.getElementById('contactForm').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+        
+        // Success message styles
+        const successStyles = `
+            <style>
+            .success-content {
+                background: white;
+                padding: 40px;
+                border-radius: 15px;
+                text-align: center;
+                max-width: 500px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            }
+
+            .success-icon {
+                font-size: 3rem;
+                margin-bottom: 20px;
+            }
+
+            .success-content h3 {
+                color: var(--primary-color);
+                margin-bottom: 15px;
+            }
+
+            .success-content p {
+                color: #666;
+                margin-bottom: 15px;
+                line-height: 1.6;
+            }
+
+            .success-content a {
+                color: var(--accent-color);
+                text-decoration: none;
+            }
+
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+
+            @keyframes fadeOut {
+                from { opacity: 1; }
+                to { opacity: 0; }
+            }
+            </style>
+        `;
+        
+        document.head.insertAdjacentHTML('beforeend', successStyles);
+    </script>
+</body>
+</html>
