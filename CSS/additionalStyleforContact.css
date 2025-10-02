@@ -583,3 +583,62 @@
                 max-width: 300px;
             }
         }
+
+        .contact-hero-image {
+            position: relative;
+            height: 60vh;
+            min-height: 400px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-image: url('assets/images/contact-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 70px;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        
+        .hero-image-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        
+        .hero-image-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero-image-content p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .contact-hero-image {
+                height: 40vh;
+                min-height: 300px;
+            }
+            
+            .hero-image-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-image-content p {
+                font-size: 1.2rem;
+            }
+        }
