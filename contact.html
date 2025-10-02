@@ -20,8 +20,6 @@
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    
-  
 </head>
 <body>
     <!-- HEADER - Sticky Navigation -->
@@ -55,157 +53,23 @@
         </div>
     </section>
 
-    <!-- Main Contact Content -->
-    <section class="section contact-main">
-        <div class="container">
-            <div class="contact-content">
-                <!-- Contact Form -->
-                <div class="contact-form-container">
-                    <h2>Send a Message</h2>
-                    <p>Fill out the form below and I'll get back to you within 4 hours (usually much sooner!)</p>
-                    
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Name *</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email *</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-                            <div class="form-group">
-                                <label for="session-type">Session Type</label>
-                                <select id="session-type" name="session-type">
-                                    <option value="">Select a session type</option>
-                                    <option value="consultation">Free Consultation</option>
-                                    <option value="birthday">Birthday Photography</option>
-                                    <option value="newborn">Baby/Newborn</option>
-                                    <option value="family">Family Session</option>
-                                    <option value="baby-shower">Baby Shower</option>
-                                    <option value="maternity">Maternity</option>
-                                    <option value="mini">Mini Session</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="preferred-date">Preferred Date/Timeframe</label>
-                            <input type="text" id="preferred-date" name="preferred-date" placeholder="e.g., Next 2 weeks, Weekend of March 15th, etc.">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="location">Preferred Location</label>
-                            <select id="location" name="location">
-                                <option value="">Select location preference</option>
-                                <option value="studio">Studio Session</option>
-                                <option value="outdoor">Outdoor Location</option>
-                                <option value="home">In-Home Session</option>
-                                <option value="venue">Event Venue</option>
-                                <option value="discuss">Let's Discuss</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Tell Me About Your Session *</label>
-                            <textarea id="message" name="message" rows="5" required 
-                                      placeholder="Tell me about your family, what you're hoping to capture, any special requests, or questions you have..."></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
-                        <p class="form-note">You'll hear back from me within 4 hours, usually much sooner!</p>
-                    </form>
-                </div>
-
-                <!-- Calendar Booking Section -->
-                <div class="calendar-booking-container">
-                    <h2>Book Your Session</h2>
-                    <p>Ready to book? Choose a time that works for you!</p>
-                    
-                    <!-- Quick Book Buttons -->
-                    <div class="quick-book-section">
-                        <h3>Popular Sessions</h3>
-                        <div class="quick-book-buttons">
-                            <button class="quick-book-btn" 
-                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/photography-consultation'});">
-                                <span class="btn-icon">☕</span>
-                                <span class="btn-text">
-                                    <strong>Free Consultation</strong>
-                                    <small>30 min chat about your needs</small>
-                                </span>
-                            </button>
-                            
-                            <button class="quick-book-btn" 
-                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/family-session'});">
-                                <span class="btn-icon">👨‍👩‍👧‍👦</span>
-                                <span class="btn-text">
-                                    <strong>Family Session</strong>
-                                    <small>90 min session, 40+ photos</small>
-                                </span>
-                            </button>
-                            
-                            <button class="quick-book-btn" 
-                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/newborn-session'});">
-                                <span class="btn-icon">👶</span>
-                                <span class="btn-text">
-                                    <strong>Newborn Session</strong>
-                                    <small>2-3 hr session, 50+ photos</small>
-                                </span>
-                            </button>
-                            
-                            <button class="quick-book-btn" 
-                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/birthday-session'});">
-                                <span class="btn-icon">🎂</span>
-                                <span class="btn-text">
-                                    <strong>Birthday Session</strong>
-                                    <small>1 hr session, 30+ photos</small>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <!-- OR Divider -->
-                    <div class="divider">
-                        <span>OR</span>
-                    </div>
-                    
-                    <!-- Embedded Calendar -->
-                    <div class="calendar-embed">
-                        <h3>View All Available Times</h3>
-                        <div class="calendly-inline-widget" 
-                             data-url="https://calendly.com/your-username/photography-session" 
-                             style="min-width:320px;height:700px;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Information -->
+    <!-- Contact Information Section -->
     <section class="section contact-info">
         <div class="container">
-            <h2>Get In Touch</h2>
+            <h2 class="text-center">How to Reach Me</h2>
+            <p class="section-subtitle">I'm here to answer your questions and help plan your perfect session</p>
             <div class="info-grid">
                 <div class="info-card">
                     <div class="info-icon">📧</div>
                     <h3>Email</h3>
-                    <p>hello@photographystudio.com</p>
+                    <p><a href="mailto:hello@photographystudio.com">hello@photographystudio.com</a></p>
                     <small>Response within 4 hours</small>
                 </div>
                 
                 <div class="info-card">
                     <div class="info-icon">📞</div>
                     <h3>Phone</h3>
-                    <p>(555) 123-4567</p>
+                    <p><a href="tel:5551234567">(555) 123-4567</a></p>
                     <small>Call or text anytime</small>
                 </div>
                 
@@ -226,10 +90,76 @@
         </div>
     </section>
 
+    <!-- Calendar Booking Section -->
+    <section class="section contact-main">
+        <div class="container">
+            <h2 class="text-center">Book Your Session</h2>
+            <p class="section-subtitle">Choose a session type and find a time that works for you</p>
+            
+            <div class="calendar-booking-container" style="max-width: 900px; margin: 0 auto;">
+                <!-- Quick Book Buttons -->
+                <div class="quick-book-section">
+                    <h3>Popular Sessions</h3>
+                    <div class="quick-book-buttons">
+                        <button class="quick-book-btn" 
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/photography-consultation'});">
+                            <span class="btn-icon">☕</span>
+                            <span class="btn-text">
+                                <strong>Free Consultation</strong>
+                                <small>30 min chat about your needs</small>
+                            </span>
+                        </button>
+                        
+                        <button class="quick-book-btn" 
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/family-session'});">
+                            <span class="btn-icon">👨‍👩‍👧‍👦</span>
+                            <span class="btn-text">
+                                <strong>Family Session</strong>
+                                <small>90 min session, 40+ photos</small>
+                            </span>
+                        </button>
+                        
+                        <button class="quick-book-btn" 
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/newborn-session'});">
+                            <span class="btn-icon">👶</span>
+                            <span class="btn-text">
+                                <strong>Newborn Session</strong>
+                                <small>2-3 hr session, 50+ photos</small>
+                            </span>
+                        </button>
+                        
+                        <button class="quick-book-btn" 
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/birthday-session'});">
+                            <span class="btn-icon">🎂</span>
+                            <span class="btn-text">
+                                <strong>Birthday Session</strong>
+                                <small>1 hr session, 30+ photos</small>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- OR Divider -->
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+                
+                <!-- Embedded Calendar -->
+                <div class="calendar-embed">
+                    <h3>View All Available Times</h3>
+                    <div class="calendly-inline-widget" 
+                         data-url="https://calendly.com/your-username/photography-session" 
+                         style="min-width:320px;height:700px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Session Information -->
     <section class="section session-info">
         <div class="container">
-            <h2>Session Information</h2>
+            <h2 class="text-center">Session Packages</h2>
             <p class="section-subtitle">Everything you need to know about booking and what to expect</p>
             
             <div class="session-grid">
@@ -316,7 +246,7 @@
     <!-- Social Media & Follow -->
     <section class="section social-section">
         <div class="container">
-            <h2>Follow My Work</h2>
+            <h2 class="text-center">Follow My Work</h2>
             <p class="section-subtitle">See behind-the-scenes content and recent session highlights</p>
             
             <div class="social-links">
@@ -431,133 +361,5 @@
     
     <!-- JavaScript Files -->
     <script src="js/main.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script>
-        // Contact form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const formObject = {};
-            formData.forEach((value, key) => {
-                formObject[key] = value;
-            });
-            
-            // Show success message
-            showSuccessMessage();
-            
-            // Reset form
-            this.reset();
-            
-            // Track form submission
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'form_submit', {
-                    'event_category': 'contact',
-                    'event_label': formObject['session-type'] || 'general_inquiry'
-                });
-            }
-        });
-        
-        function showSuccessMessage() {
-            const successMessage = document.createElement('div');
-            successMessage.className = 'success-overlay';
-            successMessage.innerHTML = `
-                <div class="success-content">
-                    <div class="success-icon">✅</div>
-                    <h3>Message Sent!</h3>
-                    <p>Thank you for reaching out! I'll get back to you within 4 hours (usually much sooner).</p>
-                    <p>In the meantime, feel free to check out my <a href="portfolio.html">recent work</a> or <a href="blog.html">photography tips</a>.</p>
-                    <button class="btn btn-primary" onclick="closeSuccessMessage()">Close</button>
-                </div>
-            `;
-            
-            successMessage.style.cssText = `
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0, 0, 0, 0.8);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                z-index: 10000;
-                animation: fadeIn 0.3s ease;
-            `;
-            
-            document.body.appendChild(successMessage);
-            document.body.style.overflow = 'hidden';
-        }
-        
-        function closeSuccessMessage() {
-            const overlay = document.querySelector('.success-overlay');
-            if (overlay) {
-                overlay.style.animation = 'fadeOut 0.3s ease';
-                setTimeout(() => {
-                    overlay.remove();
-                    document.body.style.overflow = '';
-                }, 300);
-            }
-        }
-        
-        // Smooth scroll to form
-        document.addEventListener('DOMContentLoaded', function() {
-            const hash = window.location.hash;
-            if (hash === '#contactForm') {
-                document.getElementById('contactForm').scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
-        });
-        
-        // Success message styles
-        const successStyles = `
-            <style>
-            .success-content {
-                background: white;
-                padding: 40px;
-                border-radius: 15px;
-                text-align: center;
-                max-width: 500px;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            }
-
-            .success-icon {
-                font-size: 3rem;
-                margin-bottom: 20px;
-            }
-
-            .success-content h3 {
-                color: var(--primary-color);
-                margin-bottom: 15px;
-            }
-
-            .success-content p {
-                color: #666;
-                margin-bottom: 15px;
-                line-height: 1.6;
-            }
-
-            .success-content a {
-                color: var(--accent-color);
-                text-decoration: none;
-            }
-
-            @keyframes fadeIn {
-                from { opacity: 0; }
-                to { opacity: 1; }
-            }
-
-            @keyframes fadeOut {
-                from { opacity: 1; }
-                to { opacity: 0; }
-            }
-            </style>
-        `;
-        
-        document.head.insertAdjacentHTML('beforeend', successStyles);
-    </script>
 </body>
 </html>
